@@ -16,7 +16,7 @@ public class Main extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
-        PotionEffect nightvisionpotion = new PotionEffect(PotionEffectType.NIGHT_VISION, Integer.MAX_VALUE, 100);
+        PotionEffect nightvisionpotion = new PotionEffect(PotionEffectType.NIGHT_VISION, Integer.MAX_VALUE, 100, true, false, false);
         e.getPlayer().addPotionEffect(nightvisionpotion);
     }
 }
